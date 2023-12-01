@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "testing-llms-demo"
+version = "0.1.0"
+description = ""
+authors = ["David Tan <davidtan@thoughtworks.com>"]
+readme = "README.md"
+packages = [{include = "testing_llms_demo"}]
+
+[tool.poetry.dependencies]
+python = "<3.12, >=3.9"
+langchain = "^0.0.344"
+openai = "^1.3.6"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
